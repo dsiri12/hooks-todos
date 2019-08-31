@@ -10,6 +10,8 @@ import TodoForm from './components/TodoForm';
 
 const App = () => {
     const initialState = useContext(TodosContext)
+    console.log("DDD", initialState);
+
     const [state, dispatch] = useReducer(todosReducer, initialState)
 
     return (
